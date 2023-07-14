@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .btn {
+    outline: none;
+    border: none;
+    background-color: #1890FF;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+    color: #FFF;
+  }
+  
+  select {
+    appearance: none;
+    outline: none;
+    background-color: #FFF;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+    color: #0E141B;
+    border-color: black;
+  }
+  
+  .mb {
+    margin-bottom: 1rem;
+  }
+  
+  .main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0E141B;
+  }
+  
+  .set-alarm-box,
+  .setted-alarms-box {
+    width: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .set-alarm-box {
+    background-color: #1890FF;
+  }
+  
+  .setted-alarms-box {
+    background-color: #FF8800;
+  }
+  
+  .set-alarm-box h2,
+  .setted-alarms-box h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .current-time {
+    font-size: 2rem;
+    color: #FFF;
+    margin-top: 1rem;
+  }
+  
+  .alarm-form {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .submit-button {
+    border-color: black;
+    border-radius: 2rem;
+    font-weight: bold;
+  }
+  
+  .setted-alarms-box .alarms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .alarm {
+    justify-content: space-between;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    background-color: #FFF;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #000;
+  }
+  
+  .alarm .delete-alarm {
+    border-radius: 2rem;
+    background-color: #E60D0D;
+    font-weight: bold;
+    color: #FFF;
+    font-size: medium;
+  }
+  
+  .time {
+    color: #0E141B;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .delete-all-button {
+    margin-top: 1rem;
+    background-color: #E60D0D;
+  }
+  
+  .btn:focus,
+  .btn:hover {
+    box-shadow: red 2px 2px 2px 1px inset, #FFF -2px -2px 10px 1px inset;
+  }
+  
+  .page-title {
+    background-color: #0E141B;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .main-container {
+      padding-block: 2rem;
+    }
+  }
+  

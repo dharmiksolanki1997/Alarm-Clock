@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Alarm Clock" content="Alarm Clock for CN Skill Test" />
+    
+    <title>Alarm Clock</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="https://library.kissclipart.com/20191014/aie/kissclipart-clock-icon-management-icon-time-icon-474c4db05c8d3baf.png" />
+
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="page-title">
+      <h1>ALARM CLOCK ⏰</h1>
+      <div class="current-time" id="current-time"></div>
+    </div>
+    <div class="main-container">
+      <div class="set-alarm-box">
+        <h2>Set Alarm</h2>
+        <div class="alarm-form">
+          <select name="hours" id="hours" required></select>
+          <select name="minutes" id="minutes" required></select>
+          <select name="seconds" id="seconds" required></select>
+          <select name="am-pm" id="am-pm" required>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          <button class="btn submit-button" id="submitButton" type="submit">Set Alarm</button>
+        </div>
+      </div>
+      <div class="setted-alarms-box">
+        <h2>Setted Alarms</h2>
+        <div class="alarms-container" id="alarms-container"></div>
+        <button class="btn delete-all-button" id="deleteAllButton">Delete All</button>
+      </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
